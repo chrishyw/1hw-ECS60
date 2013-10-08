@@ -1,9 +1,34 @@
 //Brian Mah, Chris Wang
+#include <string>
+#include <iostream>
+#include "CPUTimer.h"
+#include "dsexceptions.h"
+#include "LinkedList.h"
+#include "StackAr.h"
+#include "CursorList.h"
+#include "QueueAr.h"
+#include "StackLi.h"
+#include "vector.h"
+#include "SkipList.h"
+
+using namespace std;
+
+int GetChoice();
+string GetFileName();
+void RunList(string filename);
+void RunCursorList(string filename);
+void RunStackAr(string filename);
+void RunStackLi(string filename);
+void RunQueueAr(string filename);
+void RunSkipList(string filename);
 
 int main()
 {
   int choice;
+  CPUTimer ct;
 
+
+  string filename = GetFileName();
   do
   {
     choice = GetChoice();
@@ -24,38 +49,43 @@ int main()
   return 0;
 }
 
-public int GetChoice()
+string GetFileName()
+{
+  return "";
+}
+
+int GetChoice()
 {
 
   return 0;
 }
 
-public void RunList(filename)
+void RunList(string filename)
 {
 
 }
 
-public void RunCursorList(filename)
+void RunCursorList(string filename)
 {
 
 }
 
-public void RunStackAr(filename)
+void RunStackAr(string filename)
 {
 
 }
 
-public void RunStackLi(filename)
+void RunStackLi(string filename)
 {
 
 }
 
-public void RunQueueAr(filename)
+void RunQueueAr(string filename)
 {
 
 }
 
-public void RunSkipList(filename)
+void RunSkipList(string filename)
 {
 
 }
